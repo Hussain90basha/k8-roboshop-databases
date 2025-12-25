@@ -44,10 +44,10 @@ spec:
         - name: liveness-port
           containerPort: 8080
         resources:
-          request:
+          requests:
             cpu: "100m"
             memory: "128Mi"
-          imits:
+          limits:
             cpu: "100m"
             memory: "128Mi"
         readinessProbe:
@@ -100,4 +100,4 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 3 # 70 is the real value      
+        averageUtilization: 5 # 70 is the real value      
