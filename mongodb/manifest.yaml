@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: bashahussain/mongodb
+        image: bashahussain/mongodb:v1
         ports:
         - containerPort: 80
           name: web
