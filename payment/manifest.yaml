@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
       - name: payment
-        image: bashahussain/shipping:v1
+        image: bashahussain/payment:v1
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
